@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.reading {
+  background-color: darkslategray;
+  height: 40vh;
+}
+
+.lower {
+  background-color: lightcoral;
+  height: 40vh;
+}
+
+.deck {
+  height: 80%;
+  width: 80%;
+  background-color: aquamarine;
+}
+
+.card {
+  height: 7rem;
+  width: 5rem;
+  background-color: firebrick;
+  border-radius: 5%;
+}
