@@ -59,3 +59,17 @@
   background-color: firebrick;
   border-radius: 5%;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  display : flex;
+}
