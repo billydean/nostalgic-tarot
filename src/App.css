@@ -147,3 +147,7 @@ ul.deck li:hover {
 /* .deck-pos-22 { left: 21em; } */
 .deck-pos-22 { left: -20vw; top: -40vh;}
 .deck-pos-23 { left: 22em; }
+
+ul.deck li.select-card {
+  bottom: 1em;
+}
