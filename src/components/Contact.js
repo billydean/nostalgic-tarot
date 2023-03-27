@@ -3,7 +3,7 @@
 function Contact () {
 
     return (
-        <nav>
+        <nav className="contact">
             <ul>
                 <li><a href="/">Contact</a></li>
                 <li><a href="/">Contact</a></li>
