@@ -7,7 +7,7 @@
 
 .reading {
   background-color: darkslategray;
-  height: 40vh;
+  height: 120vh;
 }
 
 .lower {
@@ -104,22 +104,38 @@ ul.deck li {
   list-style-type: none;
   float: left;
   position: absolute;
+  bottom: 0;
+  transition: all 300ms ease-in-out;
+}
+
+ul.deck li:hover {
+  bottom: 1em;
+  box-shadow: 0 0 10px 1px #fff;
+  
 }
 
 .deck-pos-1 { left: 0; }
 .deck-pos-2 { left: 1em; }
-.deck-pos-3 { left: 2em; }
+.deck-pos-3 { left: -20vw; top: -120vh;} 
+/*POSITION ONE */
+/* .deck-pos-3 { left: 2em; } */
 .deck-pos-4 { left: 3em; }
 .deck-pos-5 { left: 4em; }
 .deck-pos-6 { left: 5em; }
-.deck-pos-7 { left: 6em; }
+/* .deck-pos-7 { left: 6em; } */
+/* POSITION TWO*/
+.deck-pos-7 { left: 50vw; top: -100vh;}
 .deck-pos-8 { left: 7em; }
 .deck-pos-9 { left: 8em; }
 .deck-pos-10 { left: 9em; }
-.deck-pos-11 { left: 10em; }
+/* POSITION THREE*/
+/* .deck-pos-11 { left: 10em; } */
+.deck-pos-11 { left: -20vw; top: -80vh;}
 .deck-pos-12 { left: 11em; }
 .deck-pos-13 { left: 12em; }
-.deck-pos-14 { left: 13em; }
+/* POSITION FOUR*/
+/* .deck-pos-14 { left: 13em; } */
+.deck-pos-14 { left: 50vw; top: -60vh;}
 .deck-pos-15 { left: 14em; }
 .deck-pos-16 { left: 15em; }
 .deck-pos-17 { left: 16em; }
@@ -127,5 +143,7 @@ ul.deck li {
 .deck-pos-19 { left: 18em; }
 .deck-pos-20 { left: 19em; }
 .deck-pos-21 { left: 20em; }
-.deck-pos-22 { left: 21em; }
+/* POSITION FIVE */
+/* .deck-pos-22 { left: 21em; } */
+.deck-pos-22 { left: -20vw; top: -40vh;}
 .deck-pos-23 { left: 22em; }
