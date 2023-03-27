@@ -16,14 +16,14 @@
 }
 
 .deck {
-  height: 80%;
-  width: 80%;
+  height: 9em;
+  width: 27em;
   background-color: aquamarine;
 }
 
 .card {
-  height: 7rem;
-  width: 5rem;
+  height: 7em;
+  width: 5em;
   background-color: firebrick;
   border-radius: 5%;
 }
@@ -77,3 +77,55 @@
   width: 80%;
   list-style-type: none;
 }
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  align-self: center;
+}
+
+
+ul.deck {
+  list-style-type: none;
+  padding: 1em;
+  margin: 0 0 0 0;
+  position: relative;
+  clear: both;
+  align-self: center;
+}
+
+ul.deck li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  float: left;
+  position: absolute;
+}
+
+.deck-pos-1 { left: 0; }
+.deck-pos-2 { left: 1em; }
+.deck-pos-3 { left: 2em; }
+.deck-pos-4 { left: 3em; }
+.deck-pos-5 { left: 4em; }
+.deck-pos-6 { left: 5em; }
+.deck-pos-7 { left: 6em; }
+.deck-pos-8 { left: 7em; }
+.deck-pos-9 { left: 8em; }
+.deck-pos-10 { left: 9em; }
+.deck-pos-11 { left: 10em; }
+.deck-pos-12 { left: 11em; }
+.deck-pos-13 { left: 12em; }
+.deck-pos-14 { left: 13em; }
+.deck-pos-15 { left: 14em; }
+.deck-pos-16 { left: 15em; }
+.deck-pos-17 { left: 16em; }
+.deck-pos-18 { left: 17em; }
+.deck-pos-19 { left: 18em; }
+.deck-pos-20 { left: 19em; }
+.deck-pos-21 { left: 20em; }
+.deck-pos-22 { left: 21em; }
+.deck-pos-23 { left: 22em; }
