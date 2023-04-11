@@ -1,15 +1,11 @@
-import Button from './Button';
 import Deck from './Deck';
 
-function LowerThirds () {
+function LowerThirds (props) {
 
     return (
         <div className="lower">
-            <Deck />
-            <div className="buttons">
-            <Button label="Start"/>
-            <Button label="Clear"/>
-            </div>
+            <Deck count={props.count} setCount={props.setCount} />
+
         </div>
     )
 };

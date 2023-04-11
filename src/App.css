@@ -7,25 +7,31 @@
 
 .reading {
   background-color: darkslategray;
-  height: 120vh;
+  height: 200vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  position: relative;
 }
 
 .lower {
   background-color: lightcoral;
-  height: 40vh;
+  height: 20vh;
+  position: static;
 }
 
 .deck {
   height: 9em;
   width: 27em;
   background-color: aquamarine;
+  position: static;
 }
 
 .card {
-  height: 7em;
-  width: 5em;
+  height: 10.5rem;
+  width: 7.5rem;
   background-color: firebrick;
-  border-radius: 5%;
+  border-radius: 1rem;
 }
 
 .header {
@@ -93,7 +99,7 @@ ul.deck {
   list-style-type: none;
   padding: 1em;
   margin: 0 0 0 0;
-  position: relative;
+  position: static;
   clear: both;
   align-self: center;
 }
@@ -105,49 +111,51 @@ ul.deck li {
   float: left;
   position: absolute;
   bottom: 0;
-  transition: all 300ms ease-in-out;
+  transition: all 300ms linear;
 }
 
 ul.deck li:hover {
   bottom: 1em;
-  box-shadow: 0 0 10px 1px #fff;
+  
   
 }
 
-.deck-pos-1 { left: 0; }
-.deck-pos-2 { left: 1em; }
-.deck-pos-3 { left: -20vw; top: -120vh;} 
+.deck-pos-1 { left: 35%; }
+.deck-pos-2 { left: 36%; }
+.deck-pos-3 { left: 5rem; top: 1rem;} 
 /*POSITION ONE */
 /* .deck-pos-3 { left: 2em; } */
-.deck-pos-4 { left: 3em; }
-.deck-pos-5 { left: 4em; }
-.deck-pos-6 { left: 5em; }
+.deck-pos-4 { left: 38%; }
+.deck-pos-5 { left: 39%; }
+.deck-pos-6 { left: 40%; }
 /* .deck-pos-7 { left: 6em; } */
 /* POSITION TWO*/
-.deck-pos-7 { left: 50vw; top: -100vh;}
-.deck-pos-8 { left: 7em; }
-.deck-pos-9 { left: 8em; }
-.deck-pos-10 { left: 9em; }
+.deck-pos-7 { right:5rem; top: 12rem;}
+.deck-pos-8 { left: 42%; }
+.deck-pos-9 { left: 43%; }
+.deck-pos-10 { left: 44%; }
 /* POSITION THREE*/
 /* .deck-pos-11 { left: 10em; } */
-.deck-pos-11 { left: -20vw; top: -80vh;}
-.deck-pos-12 { left: 11em; }
-.deck-pos-13 { left: 12em; }
+.deck-pos-11 { left: 5rem; top: 23rem;}
+.deck-pos-12 { left: 46%; }
+.deck-pos-13 { left: 47%; }
 /* POSITION FOUR*/
 /* .deck-pos-14 { left: 13em; } */
-.deck-pos-14 { left: 50vw; top: -60vh;}
-.deck-pos-15 { left: 14em; }
-.deck-pos-16 { left: 15em; }
-.deck-pos-17 { left: 16em; }
-.deck-pos-18 { left: 17em; }
-.deck-pos-19 { left: 18em; }
-.deck-pos-20 { left: 19em; }
-.deck-pos-21 { left: 20em; }
+.deck-pos-14 { right: 5rem; top: 34rem;}
+.deck-pos-15 { left: 49%; }
+.deck-pos-16 { left: 50%; }
+.deck-pos-17 { left: 51%; }
+.deck-pos-18 { left: 52%; }
+.deck-pos-19 { left: 53%; }
+.deck-pos-20 { left: 54%; }
+.deck-pos-21 { left: 55%; }
 /* POSITION FIVE */
 /* .deck-pos-22 { left: 21em; } */
-.deck-pos-22 { left: -20vw; top: -40vh;}
-.deck-pos-23 { left: 22em; }
+.deck-pos-22 { left: 5rem; top: 45rem;}
+.deck-pos-23 { left: 57%; }
 
 ul.deck li.select-card {
   bottom: 1em;
+  box-shadow: 0 0 10px 1px #fff;
 }
+
