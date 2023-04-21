@@ -6,11 +6,17 @@ import ReadingSpace from './components/Reading';
 
 function App() {
   const [count, setCount] = useState(0);
+  const [selection, setSelection] = useState([]);
 
   return (
     <div className="App">
       <Header />
-        <ReadingSpace count={count} setCount={setCount}/>
+        <ReadingSpace 
+        count={count} 
+        setCount={setCount}
+        selection={selection}
+        setSelection={setSelection}
+        />
         <div style={{height: "2rem", display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <div className="buttons">
             <button disabled={count < 5}>Start</button>

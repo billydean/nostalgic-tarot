@@ -5,7 +5,12 @@ function ReadingSpace (props) {
     return (
         <div className="reading">
             <div style={{height: "50vh"}}></div>
-            <LowerThirds count={props.count} setCount={props.setCount}/>
+            <LowerThirds 
+            count={props.count} 
+            setCount={props.setCount}
+            selection={props.selection}
+            setSelection={props.setSelection}
+            />
         </div>
     )
 };
