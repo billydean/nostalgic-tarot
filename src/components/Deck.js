@@ -10,9 +10,11 @@ function Deck (props) {
         if (card.contains("select-card")) {
             card.remove("select-card");
             setCount(count - 1)
+            console.log(count);
         } else if (count < 5){
             card.add("select-card");
             setCount(count + 1)
+            console.log(count);
         } else {
             console.log('MAX selected!!')
         }
