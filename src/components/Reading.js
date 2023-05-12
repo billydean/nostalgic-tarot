@@ -1,11 +1,11 @@
-import LowerThirds from "./LowerThirds";
+import Deck from "./Deck"
 
 function ReadingSpace (props) {
 
     return (
-        <div className="reading">
-            <div style={{height: "50vh"}}></div>
-            <LowerThirds 
+        <div className={props.class}>
+            {/* <div style={{height: "50vh"}}></div> */}
+            <Deck 
             count={props.count} 
             setCount={props.setCount}
             selection={props.selection}
