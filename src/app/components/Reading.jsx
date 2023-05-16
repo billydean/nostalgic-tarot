@@ -1,4 +1,6 @@
-import Deck from "./Deck"
+/* eslint-disable react/prop-types */
+import React from "react";
+import Deck from "./Deck";
 
 function ReadingSpace (props) {
 
@@ -13,6 +15,6 @@ function ReadingSpace (props) {
             />
         </div>
     )
-};
+}
 
 export default ReadingSpace;

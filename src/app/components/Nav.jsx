@@ -1,4 +1,4 @@
-
+import React from "react";
 
 function Nav () {
 
@@ -11,6 +11,6 @@ function Nav () {
             </ul>
         </nav>
     )
-};
+}
 
 export default Nav;
