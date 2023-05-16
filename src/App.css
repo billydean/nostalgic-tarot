@@ -17,12 +17,12 @@
 
 .open-reading {
   background-color: darkslategray;
-  height: 65rem;
+  height: 67rem;
   display: flex;
   flex-direction:column;
   justify-content: space-between;
   position: relative;
-  transition: all 1500ms linear;
+  transition: all 1000ms linear;
 }
 
 .lower {
@@ -36,7 +36,7 @@
   width: 100%;
   border-radius: 1rem;
   position: absolute;
-  transition: transform 2s ease;
+  transition: transform 3s ease;
 }
 
 .back {
@@ -62,6 +62,11 @@
   height: 7rem;
   width: 5rem;
   border-radius: 1rem;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: absolute;
+  transition: all 1s ease;
 }
 
 .header {
@@ -125,8 +130,8 @@
 }
 
 
-ul.deck {
-  list-style-type: none;
+.deck {
+  /* list-style-type: none; */
   padding: 1em;
   margin: 0 0 0 0;
   /* position: static; */
@@ -134,18 +139,21 @@ ul.deck {
   /* align-self: center; */
 }
 
-ul.deck li {
+/* .deck div {
   margin: 0;
   padding: 0;
   list-style-type: none;
   float: left;
   position: absolute;
   /* bottom: 0; */
-  transition: all 5s ease;
+  /* transition: all 5s ease; */
+  /* transition: bottom 300ms linear; */
+
+.resting {
   transition: bottom 300ms linear;
 }
 
-ul.deck li:hover {
+.resting:hover {
   bottom: 1em;
 }
 
@@ -174,41 +182,41 @@ ul.deck li:hover {
 .deck-pos-23 { left: 58%; bottom: 1%; }
 
 .target-0 { 
-  left: 7rem; 
-  top: 1rem;
+  left: 12.5%; 
+  bottom: 83%;
   height: 10.5rem;
   width: 7.5rem;
 }
 
 .target-1 { 
-  right:7rem; 
-  top: 11.5rem;
+  left: 74.1%;
+  bottom: 66%;
   height: 10.5rem;
   width: 7.5rem;
 }
 
 .target-2 { 
-  left: 7rem; 
-  top: 22rem;
+  left: 12.5%; 
+  bottom: 49%;
   height: 10.5rem;
   width: 7.5rem;
 }
 
 .target-3 { 
-  right: 7rem; 
-  top: 32.5rem;
+  left: 74.1%;
+  bottom: 32%;
   height: 10.5rem;
   width: 7.5rem;
 }
 
 .target-4 { 
-  left: 7rem; 
-  top: 43rem;
+  left: 12.5%; 
+  bottom: 15%;
   height: 10.5rem;
   width: 7.5rem;
 }
 
-ul.deck li.select-card {
+.select-card {
   bottom: 1em;
   box-shadow: 0 0 10px 1px #fff;
 }

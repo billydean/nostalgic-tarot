@@ -17,9 +17,10 @@ function App() {
       let c = card.children;
       c[0].classList.toggle('flipped');
       c[1].classList.toggle('flipped');
+      card.classList.toggle('resting');
       card.classList.toggle('select-card')
       card.classList.toggle(`target-${selection.indexOf(each)}`);
-      card.classList.toggle(each);
+      // card.classList.toggle(each);
     }
   }
 

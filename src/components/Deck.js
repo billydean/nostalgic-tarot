@@ -6,7 +6,7 @@ function Deck (props) {
     const selectCard = (e) => {
 
         let card = e.target.parentElement.classList
-        let value = card[1]
+        let value = card[2]
         if (!card.contains("card")) {
             console.log('oops, not a card!')
         } else if (card.contains("select-card")) {
@@ -25,16 +25,26 @@ function Deck (props) {
 
     return ( 
 
-        <ul className="deck">
+        <div className="deck">
             { cards.map((entry, index)=> {
-                return <li 
+                return <div 
                 key={index} 
-                className={`card deck-pos-${entry}`}
+                className={`card resting deck-pos-${entry}`}
                 onClick={(e)=>selectCard(e)}
                 > <div className="back"></div><div className="front"></div>
-                 </li>
+                 </div>
             }) }
-        </ul>
+            </div>
+        // <ul className="deck">
+        //     { cards.map((entry, index)=> {
+        //         return <li 
+        //         key={index} 
+        //         className={`card deck-pos-${entry}`}
+        //         onClick={(e)=>selectCard(e)}
+        //         > <div className="back"></div><div className="front"></div>
+        //          </li>
+        //     }) }
+        // </ul>
     )
 };
 
