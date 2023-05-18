@@ -26,3 +26,6 @@ yarn-error.log*
 *.local
 
 .eslintcache
+
+/migrations
+/seeds
