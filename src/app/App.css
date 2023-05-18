@@ -17,7 +17,7 @@
   
   .open-reading {
     background-color: darkslategray;
-    height: 67rem;
+    height: 70rem;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -59,7 +59,7 @@
   }
   
   .card {
-    height: 7rem;
+    height: 8.8rem;
     width: 5rem;
     border-radius: 1rem;
     margin: 0;
@@ -183,37 +183,37 @@
   
   .target-0 { 
     left: 12.5%; 
-    bottom: 83%;
-    height: 10.5rem;
-    width: 7.5rem;
+    bottom: 80%;
+    height: 12rem;
+    width: 6.8rem;
   }
   
   .target-1 { 
     left: 74.1%;
-    bottom: 66%;
-    height: 10.5rem;
-    width: 7.5rem;
+    bottom: 65%;
+    height: 12rem;
+    width: 6.8rem;
   }
   
   .target-2 { 
     left: 12.5%; 
-    bottom: 49%;
-    height: 10.5rem;
-    width: 7.5rem;
+    bottom: 50%;
+    height: 12rem;
+    width: 6.8rem;
   }
   
   .target-3 { 
     left: 74.1%;
-    bottom: 32%;
-    height: 10.5rem;
-    width: 7.5rem;
+    bottom: 35%;
+    height: 12rem;
+    width: 6.8rem;
   }
   
   .target-4 { 
     left: 12.5%; 
-    bottom: 15%;
-    height: 10.5rem;
-    width: 7.5rem;
+    bottom: 20%;
+    height: 12rem;
+    width: 6.8rem;
   }
   
   .select-card {
