@@ -9,4 +9,7 @@ module.exports = {
     },
     pool: {
         afterCreate: (conn, done) => conn.run('PRAGMA foreign_keys = ON', done)},
+    connection: {
+        filename: './src/data/cards.db3'
+    }
     };

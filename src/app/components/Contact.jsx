@@ -1,4 +1,4 @@
-
+import React from "react";
 
 function Contact () {
 
@@ -11,6 +11,6 @@ function Contact () {
             </ul>
         </nav>
     )
-};
+}
 
 export default Contact;

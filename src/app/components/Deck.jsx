@@ -1,3 +1,6 @@
+import React from "react";
+import PropTypes from 'prop-types';
+
 function Deck (props) {
     const {count, setCount, selection, setSelection} = props;
 
@@ -46,6 +49,8 @@ function Deck (props) {
         //     }) }
         // </ul>
     )
-};
+}
+
+Deck.PropTypes
 
 export default Deck;
