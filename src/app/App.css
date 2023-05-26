@@ -3,6 +3,7 @@
     border: solid black 1px;
     margin: 0;
     padding: 0;
+    font-size: 14px;
   }
   
   .closed-reading {
@@ -25,6 +26,61 @@
     transition: all 1000ms linear;
   }
   
+  .reading-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 11rem;
+    padding-right: 12.6rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .reading-1 {
+    /* position: absolute; */
+    /* margin-top: 4rem;
+    margin-left: 20%; */
+    /* bottom: 79%;
+    left: calc(20% + 10rem); */
+    height: 10rem;
+    width: 55%;
+  }
+  .reading-2 {
+    /* position: absolute;
+    margin-top: 14.5rem; */
+    /* bottom: 63%;
+    left: calc(74.1% - 10rem); */
+    height: 10rem;
+    width: 55%;
+  }
+  .reading-3 {
+    /* position: absolute;
+    margin-top: 25rem; */
+    /* bottom: 48%;
+    left: 20%; */
+    height: 10rem;
+    width: 55%;
+  }
+  .reading-4 {
+    /* position: absolute;
+    margin-top: 35.5rem; */
+    /* bottom: 32%;
+    left: calc(74.1% - 10rem); */
+    height: 10rem;
+    width: 55%;
+  }
+  .reading-5 {
+    /* position: absolute;
+    margin-top: 46rem; */
+    /* bottom: 17%;
+    left: 20%; */
+    height: 10rem;
+    width: 55%;
+  }
+
   .lower {
     background-color: lightcoral;
     height: 20vh;
@@ -55,28 +111,7 @@
     background: blueviolet;
     transform: rotateY(180deg);
   }
-  /* .back {
-    transform: rotateY(180deg);
-    background-color: firebrick;
-    opacity: 100%;
-  }
-  
-  .back.flipped {
-    transform: rotateY(0deg);
-    opacity: 0;
-  }
-  
-  .front {
-    transform: rotateY(0deg);
-    opacity: 0;
-    
-  }
-  
-  .front.flipped{
-    transform: rotateY(180deg);
-    background-color: blueviolet;
-    opacity: 100%;
-  } */
+
   
   .card {
     height: 8.8rem;

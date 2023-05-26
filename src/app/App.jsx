@@ -9,9 +9,11 @@ function App() {
   const [count, setCount] = useState(0);
   const [selection, setSelection] = useState([]);
   const [readingClass, setReadingClass] = useState('closed-reading')
+  const [started, setStart] = useState(false)
 
   function start () {
     setReadingClass('open-reading');
+    setStart(true);
     for (let each of selection) {
       let card = document.querySelector(`.${each}`);
       let c = card.children;
@@ -35,6 +37,7 @@ function App() {
         setCount={setCount}
         selection={selection}
         setSelection={setSelection}
+        started={started}
         />
         <div style={{height: "2rem", display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <div className="buttons">
