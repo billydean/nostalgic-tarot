@@ -7,7 +7,6 @@ function ReadingSpace (props) {
 
     return (
         <div className={props.class}>
-            {/* <div style={{height: "50vh"}}></div> */}
             <Deck 
             count={props.count} 
             setCount={props.setCount}

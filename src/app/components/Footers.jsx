@@ -10,6 +10,6 @@ function Footer () {
             <p>© 2023 Billy Goehring</p>
         </footer>
     )
-};
+}
 
 export default Footer;

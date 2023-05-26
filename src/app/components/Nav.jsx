@@ -5,9 +5,9 @@ function Nav () {
     return (
         <nav className="navbar">
             <ul>
-                <li><a href="/">Link</a></li>
-                <li><a href="/">Link</a></li>
-                <li><a href="/">Link</a></li>
+                <li><a href="/">Github</a></li>
+                <li><a href="/">LinkedIn</a></li>
+                <li><a href="/">Resume</a></li>
             </ul>
         </nav>
     )

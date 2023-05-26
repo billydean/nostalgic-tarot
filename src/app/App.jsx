@@ -14,15 +14,11 @@ function App() {
     setReadingClass('open-reading');
     for (let each of selection) {
       let card = document.querySelector(`.${each}`);
-      // card.className = `card target-${selection.indexOf(each)}`;
       let c = card.children;
-      // card.classList.toggle('flipped')
       c[0].classList.toggle('flipped');
-      // c[1].classList.toggle('flipped');
       card.classList.toggle('resting');
       card.classList.toggle('select-card')
       card.classList.toggle(`target-${selection.indexOf(each)}`);
-      // card.classList.toggle(each);
     }
   }
 
