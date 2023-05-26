@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+
 import React from "react";
+import PropTypes from 'prop-types';
 import Deck from "./Deck";
 
 function ReadingSpace (props) {
@@ -15,6 +16,14 @@ function ReadingSpace (props) {
             />
         </div>
     )
+}
+
+ReadingSpace.propTypes = {
+    class: PropTypes.string,
+    count: PropTypes.number,
+    setCount: PropTypes.func,
+    selection: PropTypes.array,
+    setSelection: PropTypes.func
 }
 
 export default ReadingSpace;

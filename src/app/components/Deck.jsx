@@ -56,6 +56,11 @@ function Deck (props) {
     )
 }
 
-Deck.PropTypes
+Deck.propTypes = {
+    count: PropTypes.number,
+    setCount: PropTypes.func,
+    selection: PropTypes.array,
+    setSelection: PropTypes.func
+}
 
 export default Deck;
