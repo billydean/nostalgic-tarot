@@ -8,11 +8,31 @@ function ReadingSpace (props) {
     return (
         <div className={props.class}>
            { props.started && <div className="reading-content">
-                <div className="reading-1"></div>
-                <div className="reading-2"></div>
-                <div className="reading-3"></div>
-                <div className="reading-4"></div>
-                <div className="reading-5"></div>
+                <div className="reading-1">
+                    <h3>HEAD</h3>
+                    <h4>Dummy Card Title</h4>
+                    <p>Dummy Card Reading</p>
+                </div>
+                <div className="reading-2">
+                    <h3>HEAD</h3>
+                    <h4>Dummy Card Title</h4>
+                    <p>Dummy Card Reading</p>
+                </div>
+                <div className="reading-3">
+                <h3>HEAD</h3>
+                    <h4>Dummy Card Title</h4>
+                    <p>Dummy Card Reading</p>
+                </div>
+                <div className="reading-4">
+                <h3>HEAD</h3>
+                    <h4>Dummy Card Title</h4>
+                    <p>Dummy Card Reading</p>
+                </div>
+                <div className="reading-5">
+                <h3>HEAD</h3>
+                    <h4>Dummy Card Title</h4>
+                    <p>Dummy Card Reading</p>
+                </div>
             </div> }
             
             <Deck 

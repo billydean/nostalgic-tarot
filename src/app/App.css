@@ -9,6 +9,7 @@
   .closed-reading {
     background-color: darkslategray;
     height: 30rem;
+    width: 100%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -18,6 +19,7 @@
   
   .open-reading {
     background-color: darkslategray;
+    width: 100%;
     height: 70rem;
     display: flex;
     flex-direction:column;
@@ -34,7 +36,7 @@
     align-items: center;
     padding-top: 3.5rem;
     padding-bottom: 11rem;
-    padding-right: 12.6rem;
+    /* padding-right: 12.6rem; */
     height: 100%;
     width: 100%;
   }
@@ -46,7 +48,7 @@
     /* bottom: 79%;
     left: calc(20% + 10rem); */
     height: 10rem;
-    width: 55%;
+    width: 54%;
   }
   .reading-2 {
     /* position: absolute;
@@ -54,7 +56,7 @@
     /* bottom: 63%;
     left: calc(74.1% - 10rem); */
     height: 10rem;
-    width: 55%;
+    width: 54%;
   }
   .reading-3 {
     /* position: absolute;
@@ -62,7 +64,7 @@
     /* bottom: 48%;
     left: 20%; */
     height: 10rem;
-    width: 55%;
+    width: 54%;
   }
   .reading-4 {
     /* position: absolute;
@@ -70,7 +72,7 @@
     /* bottom: 32%;
     left: calc(74.1% - 10rem); */
     height: 10rem;
-    width: 55%;
+    width: 54%;
   }
   .reading-5 {
     /* position: absolute;
@@ -78,7 +80,7 @@
     /* bottom: 17%;
     left: 20%; */
     height: 10rem;
-    width: 55%;
+    width: 54%;
   }
 
   .lower {
@@ -250,31 +252,31 @@
   .deck-pos-23 { left: 58%; bottom: 1%; }
   
   .target-0 { 
-    left: 12.5%; 
+    left: 13%; 
     bottom: 80%;
     transform: scale(1.4)
   }
   
   .target-1 { 
-    left: 74.1%;
+    left: 83%;
     bottom: 65%;
     transform: scale(1.4)
   }
   
   .target-2 { 
-    left: 12.5%; 
+    left: 13%; 
     bottom: 50%;
     transform: scale(1.4)
   }
   
   .target-3 { 
-    left: 74.1%;
+    left: 83%;
     bottom: 35%;
     transform: scale(1.4)
   }
   
   .target-4 { 
-    left: 12.5%; 
+    left: 13%; 
     bottom: 20%;
     transform: scale(1.4)
   }
