@@ -49,7 +49,13 @@ function App() {
       card.classList.toggle('select-card')
       card.classList.toggle(`target-${selection.indexOf(each)}`);
     }
+    document.querySelector('.target-0 > div > .front').setAttribute('style', `background-image: url(${cardData[0].url}); background-size: contain;`);
+    document.querySelector('.target-1 > div > .front').setAttribute('style', `background-image: url(${cardData[1].url}); background-size: contain;`);
+    document.querySelector('.target-2 > div > .front').setAttribute('style', `background-image: url(${cardData[2].url}); background-size: contain;`);
+    document.querySelector('.target-3 > div > .front').setAttribute('style', `background-image: url(${cardData[3].url}); background-size: contain;`);
+    document.querySelector('.target-4 > div > .front').setAttribute('style', `background-image: url(${cardData[4].url}); background-size: contain;`);
   }
+
 
   function clear () {
     setReadingClass('closed-reading');

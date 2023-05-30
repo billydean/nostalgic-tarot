@@ -34,8 +34,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 3.5rem;
-    padding-bottom: 11rem;
+    padding-top: 1.5rem;
+    padding-bottom: 13rem;
     /* padding-right: 12.6rem; */
     height: 100%;
     width: 100%;
@@ -93,11 +93,6 @@
     flex-direction: column;
   }
 
-  .lower {
-    background-color: lightcoral;
-    height: 20vh;
-    position: static;
-  }
   
   .front, .back {
     height: 100%;
@@ -111,23 +106,25 @@
     
   }
   
-  .front {
-    background: firebrick;
+  .back {
+    background-image: url('https://i.imgur.com/3ovVgAo.png');
+    background-size: contain;
   }
+ 
   .flipped {
     transform: rotateY(180deg);
     transition: transform 10s;
   }
 
-  .back {
+  .front {
     background: blueviolet;
     transform: rotateY(180deg);
   }
 
   
   .card {
-    height: 8.8rem;
-    width: 5rem;
+    height: 11.44rem;
+    width: 6.5rem;
     border-radius: 1rem;
     margin: 0;
     padding: 0;
@@ -264,31 +261,31 @@
   .target-0 { 
     left: 13%; 
     bottom: 80%;
-    transform: scale(1.4)
+    transform: scale(1.2)
   }
   
   .target-1 { 
-    left: 83%;
+    left: 80%;
     bottom: 65%;
-    transform: scale(1.4)
+    transform: scale(1.2)
   }
   
   .target-2 { 
     left: 13%; 
     bottom: 50%;
-    transform: scale(1.4)
+    transform: scale(1.2)
   }
   
   .target-3 { 
-    left: 83%;
+    left: 80%;
     bottom: 35%;
-    transform: scale(1.4)
+    transform: scale(1.2)
   }
   
   .target-4 { 
     left: 13%; 
     bottom: 20%;
-    transform: scale(1.4)
+    transform: scale(1.2)
   }
   
   .select-card {

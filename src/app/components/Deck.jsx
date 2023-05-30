@@ -39,8 +39,8 @@ function Deck (props) {
                 onClick={(e)=>selectCard(e)}
                 > 
                 <div className="card-content">
-                <div className="back"></div>
                 <div className="front"></div>
+                <div className="back"></div>
                 </div>
                 </div>
             }) }
@@ -52,7 +52,8 @@ Deck.propTypes = {
     count: PropTypes.number,
     setCount: PropTypes.func,
     selection: PropTypes.array,
-    setSelection: PropTypes.func
+    setSelection: PropTypes.func,
+    cardData: PropTypes.array
 }
 
 export default Deck;

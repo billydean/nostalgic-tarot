@@ -46,6 +46,7 @@ function ReadingSpace (props) {
             setCount={props.setCount}
             selection={props.selection}
             setSelection={props.setSelection}
+            cardData={props.cardData}
             />
         </div>
     )
