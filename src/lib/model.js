@@ -1,15 +1,17 @@
 const db = require('../data/config');
 
 async function getCardInfo(card_id) {
-    const card = await db('cards')
+    const cardQuery = await db('cards')
         .where('cards.id', card_id)
-        .select();
-
-    return {
-        title: card.card_title,
-        reading: card.card_text,
-        url: card.image_url
+        .first()
+    
+    const card = {
+        title: cardQuery.card_title,
+        reading: cardQuery.card_text,
+        url: cardQuery.image_url
     }
+
+    return card;
 }
 
 module.exports = { getCardInfo }

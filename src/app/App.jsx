@@ -10,7 +10,9 @@ function App() {
   const [selection, setSelection] = useState([]);
   const [readingClass, setReadingClass] = useState('closed-reading')
   const [started, setStart] = useState(false)
-  const [ids, setIds] = useState([])
+  // const [ids, setIds] = useState([])
+  const [cardData, setCardData] = useState([]);
+  // const [test, setTest] = useState('')
 
   const shuffleCards = array => {
     for (let i = array.length - 1; i > 0; i--) {
@@ -26,11 +28,17 @@ function App() {
   useEffect(()=>{
       shuffleCards(card_ids);
       const shuffledSlice = card_ids.slice(0,5);
-      setIds(shuffledSlice)
+      let cards = []
+      for (let each of shuffledSlice) {
+        fetch(`/api/${each}`)
+        .then((response) => response.json())
+        .then((data) => cards.push(data));
+        }
+      setCardData(cards);
   }, [])
 
+
   function start () {
-    console.log(ids); // DELETE LATER
     setReadingClass('open-reading');
     setStart(true);
     for (let each of selection) {
@@ -57,6 +65,7 @@ function App() {
         selection={selection}
         setSelection={setSelection}
         started={started}
+        cardData={cardData}
         />
         <div style={{height: "2rem", display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <div className="buttons">
