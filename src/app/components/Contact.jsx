@@ -5,9 +5,8 @@ function Contact () {
     return (
         <nav className="contact">
             <ul>
-                <li><a href="/">Contact</a></li>
-                <li><a href="/">Contact</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href="/">billy.goehring@gmail.com</a></li>
+                <li>Eugene, Oregon</li>
             </ul>
         </nav>
     )
