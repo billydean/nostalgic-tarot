@@ -42,16 +42,20 @@ h1 {
 
 .header {
   display: flex;
+  justify-content: space-between;
+}
+.header-text {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.header h1 {
+.header-text h1 {
   align-self: first baseline;
   padding-left: 3vw;
 }
 
-.header p {
+.header-text p {
   align-self: first baseline;
   padding-left: 5vw;
   padding-right: 10vw;
@@ -206,22 +210,34 @@ h1 {
 
 
   
-  .navbar {
-    width: 60vw;
-  
-  }
-  .navbar ul {
-    display : flex;
+  /* .navbar { */
+    /* align-self: stretch; */
+    /* display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    
+  } */
+  
+
+  .navbar {
+    display : flex;
+    flex-direction: column;
     list-style-type: none;
+    justify-content: space-around;
+    padding: 0 1rem;
   }
   
   .navbar li {
     width: 5vw;
     display: flex;
     justify-content: center;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
   }
   
+  .navbar li a {
+    text-decoration: none;
+  }
   .footer {
     display: flex;
     justify-content: right;
