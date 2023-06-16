@@ -58,10 +58,18 @@ function App() {
 
 
   function clear () {
+    setStart(false);
+    for (let each of selection) {
+      let card = document.querySelector(`.${each}`);
+      let c = card.children;
+      c[0].classList.toggle('flipped');
+      c[0].removeAttribute('style');
+      card.classList.add('resting');
+      card.classList.toggle(`target-${selection.indexOf(each)}`);
+    }
     setReadingClass('closed-reading');
     setCount(0);
     setSelection([]);
-    setStart(false);
     setCardData([]);
   }
 

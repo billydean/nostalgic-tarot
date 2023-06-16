@@ -8,16 +8,19 @@ function Deck (props) {
     
     const selectCard = (e) => {
         let content= e.target.parentElement
-        let card = content.parentElement.classList
-        let value = card[2]
-        if (!card.contains("card")) {
+        let card = content.parentElement.className.split(' ')
+        console.log(card)
+        const regex = /deck/
+        let value = card.find(elem => regex.test(elem));
+        // let value = card[2]
+        if (!card.includes("card")) {
             console.log('oops, not a card!')
-        } else if (card.contains("select-card")) {
+        } else if (card.includes("select-card")) {
             card.remove("select-card");
             setCount(count - 1);
             setSelection(selection.filter(each => each !== value))
         } else if (count < 5){
-            card.add("select-card");
+            content.parentElement.classList.add("select-card");
             setCount(count + 1)
             setSelection([...selection, value])
         } else {
