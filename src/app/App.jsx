@@ -91,11 +91,11 @@ function App() {
             >Clear</button>
           </div> */}
           {started 
-            ? <div className="button" style={{position: "relative"}} onClick={()=>clear()}>
+            ? <div className="button enabled" style={{position: "relative"}} onClick={()=>clear()}>
               <span className='btn button-label'>restart</span>
               <span className='btn button-fill'>restart</span>
             </div>
-            : <div className="button" style={{position: "relative"}} onClick={()=>{
+            : <div className={`button ${count == 5 ? "enabled" : ""}`} style={{position: "relative"}} onClick={()=>{
               if (count === 5) {
                 start()
               }
