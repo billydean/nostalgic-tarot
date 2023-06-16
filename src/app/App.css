@@ -298,10 +298,52 @@ h1 {
   } */
   
   .buttons {
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 3rem 0;
   }
   
+  .button {
+    /* display: inline-block; */
+    position: relative;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .button-label {
+    color: #0F1B61;
+    border: 3px solid rgba(127,0,224,0.75);
+    border-radius: 8px;
+    z-index: 2; 
+    position: relative;
+    /* display: inline-block; */
+    padding: 5px 20px;
+
+  }
   
+  .button-fill {
+    backface-visibility: hidden;
+    position: absolute;
+    color: #aadcec;
+    /* display: inline-block; */
+    z-index: 1;
+    border-radius: 8px;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+  }
+
+  .enabled:hover {
+    background-color: #aadcec;
+    box-shadow: inset 6px 6px #e1f4ff, 6px 6px #aadcec;
+  }
+
   .deck {
     /* list-style-type: none; */
     padding: 1em;

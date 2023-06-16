@@ -59,6 +59,10 @@ function App() {
 
   function clear () {
     setReadingClass('closed-reading');
+    setCount(0);
+    setSelection([]);
+    setStart(false);
+    setCardData([]);
   }
 
   return (
@@ -73,8 +77,8 @@ function App() {
         started={started}
         cardData={cardData}
         />
-        <div style={{height: "2rem", display:'flex', flexDirection: 'column', justifyContent: 'center'}}>
-          <div className="buttons">
+        <div className='buttons'>
+          {/* <div className="buttons">
             <button 
               disabled={count < 5}
               onClick={()=>start()}
@@ -85,7 +89,21 @@ function App() {
               disabled={count < 1}
               onClick={()=>clear()}
             >Clear</button>
-          </div>
+          </div> */}
+          {started 
+            ? <div className="button" style={{position: "relative"}} onClick={()=>clear()}>
+              <span className='btn button-label'>restart</span>
+              <span className='btn button-fill'>restart</span>
+            </div>
+            : <div className="button" style={{position: "relative"}} onClick={()=>{
+              if (count === 5) {
+                start()
+              }
+            }}>
+              <span className='btn button-label'>start</span>
+              <span className='btn button-fill'>start</span>
+            </div>
+            }
         </div>
       <Footer />
     </div>
