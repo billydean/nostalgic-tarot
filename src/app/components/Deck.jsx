@@ -9,14 +9,13 @@ function Deck (props) {
     const selectCard = (e) => {
         let content= e.target.parentElement
         let card = content.parentElement.className.split(' ')
-        console.log(card)
         const regex = /deck/
         let value = card.find(elem => regex.test(elem));
         // let value = card[2]
         if (!card.includes("card")) {
             console.log('oops, not a card!')
         } else if (card.includes("select-card")) {
-            card.remove("select-card");
+            content.parentElement.classList.remove("select-card");
             setCount(count - 1);
             setSelection(selection.filter(each => each !== value))
         } else if (count < 5){
@@ -26,7 +25,6 @@ function Deck (props) {
         } else {
             console.log('MAX selected!!')
         }
-        console.log(count, selection);
     }
 
     return ( 

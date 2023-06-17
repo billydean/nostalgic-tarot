@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Header from './components/Header';
 import Footer from './components/Footers';
@@ -25,20 +25,22 @@ function App() {
 
   const card_ids = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
 
-  useEffect(()=>{
-      shuffleCards(card_ids);
-      const shuffledSlice = card_ids.slice(0,5);
-      let cards = []
-      for (let each of shuffledSlice) {
-        fetch(`/api/${each}`)
-        .then((response) => response.json())
-        .then((data) => cards.push(data));
-        }
-      setCardData(cards);
-  }, [])
+  // const shuffleAndSet = () => {
+    
+// }
 
 
-  function start () {
+
+ async function start () {
+    shuffleCards(card_ids);
+    const shuffledSlice = card_ids.slice(0,5);
+    let cards = []
+    for (let each of shuffledSlice) {
+       await fetch(`/api/${each}`)
+      .then((response) => response.json())
+      .then((data) => cards.push(data));
+      }
+    setCardData(cards);
     setReadingClass('open-reading');
     setStart(true);
     for (let each of selection) {
@@ -49,11 +51,11 @@ function App() {
       card.classList.toggle('select-card')
       card.classList.toggle(`target-${selection.indexOf(each)}`);
     }
-    document.querySelector('.target-0 > div > .front').setAttribute('style', `background-image: url(${cardData[0].url}); background-size: contain;`);
-    document.querySelector('.target-1 > div > .front').setAttribute('style', `background-image: url(${cardData[1].url}); background-size: contain;`);
-    document.querySelector('.target-2 > div > .front').setAttribute('style', `background-image: url(${cardData[2].url}); background-size: contain;`);
-    document.querySelector('.target-3 > div > .front').setAttribute('style', `background-image: url(${cardData[3].url}); background-size: contain;`);
-    document.querySelector('.target-4 > div > .front').setAttribute('style', `background-image: url(${cardData[4].url}); background-size: contain;`);
+    document.querySelector('.target-0 > div > .front').setAttribute('style', `background-image: url(${cards[0].url}); background-size: contain;`);
+    document.querySelector('.target-1 > div > .front').setAttribute('style', `background-image: url(${cards[1].url}); background-size: contain;`);
+    document.querySelector('.target-2 > div > .front').setAttribute('style', `background-image: url(${cards[2].url}); background-size: contain;`);
+    document.querySelector('.target-3 > div > .front').setAttribute('style', `background-image: url(${cards[3].url}); background-size: contain;`);
+    document.querySelector('.target-4 > div > .front').setAttribute('style', `background-image: url(${cards[4].url}); background-size: contain;`);
   }
 
 
