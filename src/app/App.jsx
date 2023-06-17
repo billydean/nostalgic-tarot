@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css'
 import Header from './components/Header';
@@ -8,7 +8,7 @@ import ReadingSpace from './components/Reading';
 function App() {
   const [count, setCount] = useState(0);
   const [selection, setSelection] = useState([]);
-  const [readingClass, setReadingClass] = useState('closed-reading')
+  const [readingClass, setReadingClass] = useState('reading')
   const [started, setStart] = useState(false)
   // const [ids, setIds] = useState([])
   const [cardData, setCardData] = useState([]);
@@ -25,23 +25,23 @@ function App() {
 
   const card_ids = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
 
-  // const shuffleAndSet = () => {
-    
-// }
+useEffect(() => {
+  shuffleCards(card_ids);
+  const shuffledSlice = card_ids.slice(0,5);
+  let cards = []
+  for (let each of shuffledSlice) {
+   fetch(`/api/${each}`)
+    .then((response) => response.json())
+    .then((data) => cards.push(data));
+    }
+  setCardData(cards);
+}, [])
 
 
 
  async function start () {
-    shuffleCards(card_ids);
-    const shuffledSlice = card_ids.slice(0,5);
-    let cards = []
-    for (let each of shuffledSlice) {
-       await fetch(`/api/${each}`)
-      .then((response) => response.json())
-      .then((data) => cards.push(data));
-      }
-    setCardData(cards);
-    setReadingClass('open-reading');
+    
+    setReadingClass('reading open');
     setStart(true);
     for (let each of selection) {
       let card = document.querySelector(`.${each}`);
@@ -51,11 +51,11 @@ function App() {
       card.classList.toggle('select-card')
       card.classList.toggle(`target-${selection.indexOf(each)}`);
     }
-    document.querySelector('.target-0 > div > .front').setAttribute('style', `background-image: url(${cards[0].url}); background-size: contain;`);
-    document.querySelector('.target-1 > div > .front').setAttribute('style', `background-image: url(${cards[1].url}); background-size: contain;`);
-    document.querySelector('.target-2 > div > .front').setAttribute('style', `background-image: url(${cards[2].url}); background-size: contain;`);
-    document.querySelector('.target-3 > div > .front').setAttribute('style', `background-image: url(${cards[3].url}); background-size: contain;`);
-    document.querySelector('.target-4 > div > .front').setAttribute('style', `background-image: url(${cards[4].url}); background-size: contain;`);
+    document.querySelector('.target-0 > div > .front').setAttribute('style', `background-image: url(${cardData[0].url}); background-size: contain;`);
+    document.querySelector('.target-1 > div > .front').setAttribute('style', `background-image: url(${cardData[1].url}); background-size: contain;`);
+    document.querySelector('.target-2 > div > .front').setAttribute('style', `background-image: url(${cardData[2].url}); background-size: contain;`);
+    document.querySelector('.target-3 > div > .front').setAttribute('style', `background-image: url(${cardData[3].url}); background-size: contain;`);
+    document.querySelector('.target-4 > div > .front').setAttribute('style', `background-image: url(${cardData[4].url}); background-size: contain;`);
   }
 
 
@@ -69,10 +69,18 @@ function App() {
       card.classList.add('resting');
       card.classList.toggle(`target-${selection.indexOf(each)}`);
     }
-    setReadingClass('closed-reading');
+    setReadingClass('reading');
     setCount(0);
     setSelection([]);
-    setCardData([]);
+    shuffleCards(card_ids);
+    const shuffledSlice = card_ids.slice(0,5);
+    let cards = []
+    for (let each of shuffledSlice) {
+     fetch(`/api/${each}`)
+      .then((response) => response.json())
+      .then((data) => cards.push(data));
+      }
+    setCardData(cards);
   }
 
   return (
