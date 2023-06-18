@@ -27,7 +27,7 @@ font-family: 'Noto Sans', sans-serif;
 * {
     box-sizing: border-box;
     /* border: solid black 1px; */
-    box-shadow: inset -1px -1px 0 black, inset 1px 1px 0 black;
+    /* box-shadow: inset -1px -1px 0 black, inset 1px 1px 0 black; */
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -128,7 +128,49 @@ h1 {
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
+    position: relative;
   }
+
+  .read-left {
+    background-color: #aadcec;
+    position: absolute;
+    height: 8vw;
+    width: 50vw;
+    right: 7vw;
+    top: 1vw;
+    /* box-shadow: inset 0.5vw 0.5vw #e1f4ff, inset -2vw -0.5vw #e1f4ff; */
+    border-top-left-radius: 20vw 5vw;
+    border-bottom-left-radius: 20vw 5vw;
+    border-top-right-radius: 2vw 3vw;
+    border-bottom-right-radius: 1.5vw 2vw;
+    z-index: -1;
+  }
+
+
+.read-right {
+  background-color: #aadcec;
+  position: absolute;
+  height: 8vw;
+  width: 50vw;
+  left: 7vw;
+  top: 1vw;
+  /* box-shadow: inset -0.5vw 0.5vw #e1f4ff, inset 0.5 -0.5vw #e1f4ff; */
+  border-top-right-radius: 20vw 5vw;
+  border-bottom-right-radius: 20vw 5vw;
+  border-top-left-radius: 2vw 3vw;
+  border-bottom-left-radius: 1.5vw 2vw;
+  z-index: -1;
+}
+.read-back {
+  position: absolute;
+    background-color: #aadcec;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* box-shadow: inset 0 -0.5vw #e1f4ff, -0.5vw -0.25vw #aadcec; */
+    border-radius: 20px;
+    border: 8px solid #e1f4ff;
+}
   .reading-2 {
     /* position: absolute;
     margin-top: 14.5rem; */
@@ -141,6 +183,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
+    position: relative;
   }
   .reading-3 {
     /* position: absolute;
@@ -154,6 +197,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
+    position: relative;
   }
   .reading-4 {
     /* position: absolute;
@@ -167,6 +211,7 @@ h1 {
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
+    position: relative;
   }
   .reading-5 {
     /* position: absolute;
@@ -179,6 +224,7 @@ h1 {
     width: 55vw;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
 
@@ -469,7 +515,11 @@ h1 {
   
   .select-card {
     bottom: -1vw;
-    box-shadow: 0 0 10px 1px #fff;
+    box-shadow: 0 0 10px 1px #e1f4ff;
   }
   
+  p::selection {
+    color:#e1f4ff;
+    background-color: rgba(127,0,224,0.75);
+  }
   
