@@ -88,9 +88,8 @@ h1 {
 }
 
   .reading {
-    margin-top: 1vw;
-    margin-bottom: 5vw;
-    height: 15rem;
+    margin-top: 2vw;
+    height: 10vw;
     min-height: max-content;
     width: 100%;
     display: flex;
@@ -101,21 +100,21 @@ h1 {
   }
   
   .open {
-    min-height: 74.6vw;
+    min-height: 78vw;
+    margin-bottom: 5vw;
   }
 
-  
-  
   .reading-content {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0rem;
+    padding-top: 3vw;
     padding-bottom: 0rem;
     /* padding-right: 12.6rem; */
-    height: max-content;
+    min-height: max-content;
+    height: 100%;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -125,7 +124,7 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 54vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
@@ -138,7 +137,7 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 54vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
@@ -151,7 +150,7 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 54vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
@@ -164,7 +163,7 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 54vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
     border-bottom: 0.6rem dotted #aadcec;
@@ -177,7 +176,7 @@ h1 {
     height: max-content;
     margin-bottom: 0rem;
     padding-bottom: 1rem;
-    width: 54vw;
+    width: 55vw;
     display: flex;
     flex-direction: column;
   }
@@ -324,7 +323,7 @@ h1 {
   .buttons {
     display: flex;
     justify-content: center;
-    margin: 1vw 0 2vw 0;
+    margin: 4vw 0 2vw 0;
   }
   
   .button {
@@ -398,71 +397,71 @@ h1 {
   }
   
   .resting:hover {
-    bottom: 2rem;
+    bottom: -0.5vw;
   }
   
-  .deck-pos-1 { left: 36%; bottom: -3vw; }
-  .deck-pos-2 { left: 37%; bottom: -3vw; }
-  .deck-pos-3 { left: 38%; bottom: -3vw; }
-  .deck-pos-4 { left: 39%; bottom: -3vw; }
-  .deck-pos-5 { left: 40%; bottom: -3vw; }
-  .deck-pos-6 { left: 41%; bottom: -3vw; }
-  .deck-pos-7 { left: 42%; bottom: -3vw; }
-  .deck-pos-8 { left: 43%; bottom: -3vw; }
-  .deck-pos-9 { left: 44%; bottom: -3vw; }
-  .deck-pos-10 { left: 45%; bottom: -3vw; }
-  .deck-pos-11 { left: 46%; bottom: -3vw; }
-  .deck-pos-12 { left: 47%; bottom: -3vw; }
-  .deck-pos-13 { left: 48%; bottom: -3vw; }
-  .deck-pos-14 { left: 49%; bottom: -3vw; }
-  .deck-pos-15 { left: 50%; bottom: -3vw; }
-  .deck-pos-16 { left: 51%; bottom: -3vw; }
-  .deck-pos-17 { left: 52%; bottom: -3vw; }
-  .deck-pos-18 { left: 53%; bottom: -3vw; }
-  .deck-pos-19 { left: 54%; bottom: -3vw; }
-  .deck-pos-20 { left: 55%; bottom: -3vw; }
-  .deck-pos-21 { left: 56%; bottom: -3vw; }
-  .deck-pos-22 { left: 57%; bottom: -3vw; }
-  .deck-pos-23 { left: 58%; bottom: -3vw; }
+  .deck-pos-1 { left: 34vw; bottom: -2vw; }
+  .deck-pos-2 { left: 35.2vw; bottom: -2vw; }
+  .deck-pos-3 { left: 36.4vw; bottom: -2vw; }
+  .deck-pos-4 { left: 37.6vw; bottom: -2vw; }
+  .deck-pos-5 { left: 38.8vw; bottom: -2vw; }
+  .deck-pos-6 { left: 40vw; bottom: -2vw; }
+  .deck-pos-7 { left: 41.2vw; bottom: -2vw; }
+  .deck-pos-8 { left: 42.4vw; bottom: -2vw; }
+  .deck-pos-9 { left: 43.6vw; bottom: -2vw; }
+  .deck-pos-10 { left: 44.8vw; bottom: -2vw; }
+  .deck-pos-11 { left: 46vw; bottom: -2vw; }
+  .deck-pos-12 { left: 47.2vw; bottom: -2vw; }
+  .deck-pos-13 { left: 48.4vw; bottom: -2vw; }
+  .deck-pos-14 { left: 49.6vw; bottom: -2vw; }
+  .deck-pos-15 { left: 50.8vw; bottom: -2vw; }
+  .deck-pos-16 { left: 52vw; bottom: -2vw; }
+  .deck-pos-17 { left: 53.2vw; bottom: -2vw; }
+  .deck-pos-18 { left: 54.4vw; bottom: -2vw; }
+  .deck-pos-19 { left: 55.6vw; bottom: -2vw; }
+  .deck-pos-20 { left: 56.8vw; bottom: -2vw; }
+  .deck-pos-21 { left: 58vw; bottom: -2vw; }
+  .deck-pos-22 { left: 59.2vw; bottom: -2vw; }
+ 
   
   .target-0 { 
-    left: 6vw; 
-    bottom: 55.5vw;
+    left: 5vw; 
+    bottom: 56vw;
     /* transform: scale(1.5) */
-    width: 10vw;
-    height: 17.6vw;
+    width: 12.5vw;
+    height: 22vw;
   }
   
   .target-1 { 
-    left: 81vw;
-    bottom: 43.4vw;
-    width: 10vw;
-    height: 17.6vw;
+    left: 80.5vw;
+    bottom: 46vw;
+    width: 12.5vw;
+    height: 22vw;
   }
   
   .target-2 { 
-    left: 6vw; 
-    bottom: 34.4vw;
-    width: 10vw;
-    height: 17.6vw;
+    left: 5vw; 
+    bottom: 33vw;
+    width: 12.5vw;
+    height: 22vw;
   }
   
   .target-3 { 
-    left: 81vw;
-    bottom: 22.3vw;
-    width: 10vw;
-    height: 17.6vw;
+    left: 80.5vw;
+    bottom: 20vw;
+    width: 12.5vw;
+    height: 22vw;
   }
   
   .target-4 { 
-    left: 6vw; 
-    bottom: 13.3vw;
-    width: 10vw;
-    height: 17.6vw;
+    left: 5vw; 
+    bottom: 10vw;
+    width: 12.5vw;
+    height: 22vw;
   }
   
   .select-card {
-    bottom: 1em;
+    bottom: -1vw;
     box-shadow: 0 0 10px 1px #fff;
   }
   
