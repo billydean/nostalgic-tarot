@@ -36,6 +36,7 @@ font-family: 'Noto Sans', sans-serif;
 
 body {
   background-color: #e1f4ff;
+  margin: 15px;
 }
 
 h1 {
@@ -58,15 +59,7 @@ h1 {
   width: 100%;
 }
 
-.closed-reading, .open-reading::before {
-  content: "";
-  /* height: 1px; */
-  width: 15%;
-  margin: auto;
-  border-top: 1rem dotted #7f00e0;
-  /* background: #7f00e0; */
-  opacity: 0.3;
-}
+
 .header-text {
   display: flex;
   flex-direction: column;
@@ -95,19 +88,21 @@ h1 {
 
   .reading {
     margin-top: 1rem;
-    height: fit-content;
-    min-height: 15rem;
+    height: 15rem;
+    min-height: max-content;
     width: 100%;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
     position: relative;
-    transition: all 500ms linear;
+    transition: all 1s linear;
   }
   
   .open {
-    min-height: 65rem;
+    height: 75rem;
   }
+
+  
   
   .reading-content {
     position: relative;
@@ -118,15 +113,17 @@ h1 {
     padding-top: 1.5rem;
     padding-bottom: 13rem;
     /* padding-right: 12.6rem; */
-    height: 100%;
+    height: max-content;
     width: 100%;
     font-family: 'Noto Sans', sans-serif;
 }
 
 
   .reading-1 {
-    height: 10rem;
-    width: 54%;
+    height: max-content;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     border-bottom: 0.4rem dotted #aadcec;
@@ -136,8 +133,10 @@ h1 {
     margin-top: 14.5rem; */
     /* bottom: 63%;
     left: calc(74.1% - 10rem); */
-    height: 10rem;
-    width: 54%;
+    height: max-content;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     border-bottom: 0.4rem dotted #aadcec;
@@ -147,8 +146,10 @@ h1 {
     margin-top: 25rem; */
     /* bottom: 48%;
     left: 20%; */
-    height: 10rem;
-    width: 54%;
+    height: max-content;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     border-bottom: 0.4rem dotted #aadcec;
@@ -158,8 +159,10 @@ h1 {
     margin-top: 35.5rem; */
     /* bottom: 32%;
     left: calc(74.1% - 10rem); */
-    height: 10rem;
-    width: 54%;
+    height: max-content;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     border-bottom: 0.4rem dotted #aadcec;
@@ -169,13 +172,30 @@ h1 {
     margin-top: 46rem; */
     /* bottom: 17%;
     left: 20%; */
-    height: 10rem;
-    width: 54%;
+    height: max-content;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
   }
 
-  
+
+  .reading-1 p, .reading-2 p, .reading-3 p, .reading-4 p, .reading-5 p {
+    height:min-content;
+  }
+
+  h3 {
+    font-family: 'Bitter', serif;
+    text-shadow: 1px 1px 0 #aadcec;
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-family: 'Bitter', serif;
+    text-shadow: 1px 1px 0 #aadcec;
+    font-size: 1.5rem;
+  }
   .front, .back {
     height: 100%;
     width: 100%;
@@ -195,7 +215,6 @@ h1 {
  
   .flipped {
     transform: rotateY(180deg);
-    transition: transform 10s;
   }
 
   .front {
@@ -224,7 +243,7 @@ h1 {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 1rem rgba(0,0,0,0.5);
-    transition: transform 3s;
+    transition: transform 2s;
     transform-style: preserve-3d;
     border-radius: 1rem;
   }
@@ -251,9 +270,10 @@ h1 {
   }
   
   .navbar li {
-    width: 5vw;
+    width: 5.5rem;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
+    padding-left: 6px;
     font-family: 'Bitter', serif;
     font-weight: 600;
     background-color: transparent;
@@ -271,8 +291,18 @@ h1 {
   .footer {
     display: flex;
     justify-content: right;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
   }
   
+  .footer p {
+    font-size: 12px;
+  }
+  
+  .footer span {
+    font-weight: 600;
+    font-size: 13px;
+  }
   .contact {
     display: flex;
     width: 60%;
