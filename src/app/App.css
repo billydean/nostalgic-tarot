@@ -277,6 +277,7 @@ h1 {
     font-weight: 600;
     background-color: transparent;
     box-shadow: -0.3rem -0.3rem #7f00e0, inset 0 0.3rem rgba(244,249,252, 0.75);
+    transition: all 300ms ease-in-out;
   }
   
   .navbar li a {
@@ -285,6 +286,11 @@ h1 {
   }
   .navbar li a b {
     background-color: transparent;
+  }
+
+  .navbar li:hover {
+    transform: scale(1.2);
+    box-shadow: -0.3rem -0.3rem #7f00e0, inset 0 1rem rgba(244,249,252, 0.75);
   }
 
   .footer {
@@ -369,6 +375,7 @@ h1 {
     background-color: #aadcec;
     box-shadow: inset 6px 6px #e1f4ff, 6px 6px #aadcec;
   }
+
 
   .deck {
     /* list-style-type: none; */
