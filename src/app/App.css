@@ -27,6 +27,7 @@ font-family: 'Noto Sans', sans-serif;
 * {
     box-sizing: border-box;
     /* border: solid black 1px; */
+    box-shadow: inset -1px -1px 0 black, inset 1px 1px 0 black;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -36,7 +37,7 @@ font-family: 'Noto Sans', sans-serif;
 
 body {
   background-color: #e1f4ff;
-  margin: 15px;
+  margin: 1vw;
 }
 
 h1 {
@@ -87,7 +88,8 @@ h1 {
 }
 
   .reading {
-    margin-top: 1rem;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
     height: 15rem;
     min-height: max-content;
     width: 100%;
@@ -99,7 +101,7 @@ h1 {
   }
   
   .open {
-    height: 75rem;
+    min-height: 74.6vw;
   }
 
   
@@ -108,10 +110,10 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 1.5rem;
-    padding-bottom: 13rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     /* padding-right: 12.6rem; */
     height: max-content;
     width: 100%;
@@ -123,10 +125,10 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 54vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.4rem dotted #aadcec;
+    border-bottom: 0.6rem dotted #aadcec;
   }
   .reading-2 {
     /* position: absolute;
@@ -136,10 +138,10 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 54vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.4rem dotted #aadcec;
+    border-bottom: 0.6rem dotted #aadcec;
   }
   .reading-3 {
     /* position: absolute;
@@ -149,10 +151,10 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 54vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.4rem dotted #aadcec;
+    border-bottom: 0.6rem dotted #aadcec;
   }
   .reading-4 {
     /* position: absolute;
@@ -162,10 +164,10 @@ h1 {
     height: max-content;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 54vw;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.4rem dotted #aadcec;
+    border-bottom: 0.6rem dotted #aadcec;
   }
   .reading-5 {
     /* position: absolute;
@@ -173,9 +175,9 @@ h1 {
     /* bottom: 17%;
     left: 20%; */
     height: max-content;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     padding-bottom: 1rem;
-    width: 50%;
+    width: 54vw;
     display: flex;
     flex-direction: column;
   }
@@ -224,18 +226,16 @@ h1 {
 
   
   .card {
-    height: 11.44rem;
-    width: 6.5rem;
+    /* height: 11.44rem;
+    width: 6.5rem; */
+    width: 6.67vw;
+    height: 11.73vw;
     border-radius: 1rem;
     margin: 0;
     padding: 0;
     float: left;
     position: absolute;
     transition: all 1s ease;
-    /* transform-style: preserve-3d; */
-    /* transition: left 1s ease;
-    transition: bottom 1s ease;
-    transition: transform 1s ease; */
   }
   
   .card-content {
@@ -324,7 +324,7 @@ h1 {
   .buttons {
     display: flex;
     justify-content: center;
-    margin: 4rem 0 3rem 0;
+    margin: 1vw 0 2vw 0;
   }
   
   .button {
@@ -373,8 +373,9 @@ h1 {
 
   .deck {
     /* list-style-type: none; */
-    padding: 1em;
-    margin: 0 0 0 0;
+    /* padding: 1em; */
+    margin: 20vw 0 0 0;
+    padding-top: 10vw;
     width: 0;
     height: 0;
     /* position: static; */
@@ -400,58 +401,64 @@ h1 {
     bottom: 2rem;
   }
   
-  .deck-pos-1 { left: 36%; bottom: 1%; }
-  .deck-pos-2 { left: 37%; bottom: 1%; }
-  .deck-pos-3 { left: 38%; bottom: 1%; }
-  .deck-pos-4 { left: 39%; bottom: 1%; }
-  .deck-pos-5 { left: 40%; bottom: 1%; }
-  .deck-pos-6 { left: 41%; bottom: 1%; }
-  .deck-pos-7 { left: 42%; bottom: 1%; }
-  .deck-pos-8 { left: 43%; bottom: 1%; }
-  .deck-pos-9 { left: 44%; bottom: 1%; }
-  .deck-pos-10 { left: 45%; bottom: 1%; }
-  .deck-pos-11 { left: 46%; bottom: 1%; }
-  .deck-pos-12 { left: 47%; bottom: 1%; }
-  .deck-pos-13 { left: 48%; bottom: 1%; }
-  .deck-pos-14 { left: 49%; bottom: 1%; }
-  .deck-pos-15 { left: 50%; bottom: 1%; }
-  .deck-pos-16 { left: 51%; bottom: 1%; }
-  .deck-pos-17 { left: 52%; bottom: 1%; }
-  .deck-pos-18 { left: 53%; bottom: 1%; }
-  .deck-pos-19 { left: 54%; bottom: 1%; }
-  .deck-pos-20 { left: 55%; bottom: 1%; }
-  .deck-pos-21 { left: 56%; bottom: 1%; }
-  .deck-pos-22 { left: 57%; bottom: 1%; }
-  .deck-pos-23 { left: 58%; bottom: 1%; }
+  .deck-pos-1 { left: 36%; bottom: -3vw; }
+  .deck-pos-2 { left: 37%; bottom: -3vw; }
+  .deck-pos-3 { left: 38%; bottom: -3vw; }
+  .deck-pos-4 { left: 39%; bottom: -3vw; }
+  .deck-pos-5 { left: 40%; bottom: -3vw; }
+  .deck-pos-6 { left: 41%; bottom: -3vw; }
+  .deck-pos-7 { left: 42%; bottom: -3vw; }
+  .deck-pos-8 { left: 43%; bottom: -3vw; }
+  .deck-pos-9 { left: 44%; bottom: -3vw; }
+  .deck-pos-10 { left: 45%; bottom: -3vw; }
+  .deck-pos-11 { left: 46%; bottom: -3vw; }
+  .deck-pos-12 { left: 47%; bottom: -3vw; }
+  .deck-pos-13 { left: 48%; bottom: -3vw; }
+  .deck-pos-14 { left: 49%; bottom: -3vw; }
+  .deck-pos-15 { left: 50%; bottom: -3vw; }
+  .deck-pos-16 { left: 51%; bottom: -3vw; }
+  .deck-pos-17 { left: 52%; bottom: -3vw; }
+  .deck-pos-18 { left: 53%; bottom: -3vw; }
+  .deck-pos-19 { left: 54%; bottom: -3vw; }
+  .deck-pos-20 { left: 55%; bottom: -3vw; }
+  .deck-pos-21 { left: 56%; bottom: -3vw; }
+  .deck-pos-22 { left: 57%; bottom: -3vw; }
+  .deck-pos-23 { left: 58%; bottom: -3vw; }
   
   .target-0 { 
-    left: 13%; 
-    bottom: 80%;
-    transform: scale(1.5)
+    left: 6vw; 
+    bottom: 55.5vw;
+    /* transform: scale(1.5) */
+    width: 10vw;
+    height: 17.6vw;
   }
   
   .target-1 { 
-    left: 80%;
-    bottom: 65%;
-    transform: scale(1.5)
+    left: 81vw;
+    bottom: 43.4vw;
+    width: 10vw;
+    height: 17.6vw;
   }
   
   .target-2 { 
-    left: 13%; 
-    bottom: 50%;
-    transform: scale(1.5)
+    left: 6vw; 
+    bottom: 34.4vw;
+    width: 10vw;
+    height: 17.6vw;
   }
   
   .target-3 { 
-    left: 80%;
-    bottom: 35%;
-    transform: scale(1.5)
+    left: 81vw;
+    bottom: 22.3vw;
+    width: 10vw;
+    height: 17.6vw;
   }
   
   .target-4 { 
-    left: 13%; 
-    bottom: 20%;
-    transform: scale(1.5)
+    left: 6vw; 
+    bottom: 13.3vw;
+    width: 10vw;
+    height: 17.6vw;
   }
   
   .select-card {
