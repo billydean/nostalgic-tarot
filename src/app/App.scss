@@ -22,7 +22,7 @@
   /* box-shadow: inset -1px -1px 0 black, inset 1px 1px 0 black; */
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 1.75vw;
   color: #0f1b61;
   background-color: transparent;
 }
@@ -34,7 +34,7 @@ body {
 
 h1 {
   font-family: "Bitter", serif;
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 800;
 }
 
@@ -71,11 +71,11 @@ h1 {
   padding-left: 5vw;
   padding-right: 10vw;
   font-family: "Bitter", serif;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .header p i {
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .reading {
@@ -109,13 +109,16 @@ h1 {
   font-family: "Noto Sans", sans-serif;
 }
 
+.reading-content p {
+  text-align: justify;
+}
 .read-left {
   background-color: #aadcec;
   position: absolute;
   height: 8vw;
   width: 50vw;
   right: 7vw;
-  top: 1vw;
+  top: 10%;
   /* box-shadow: inset 0.5vw 0.5vw #e1f4ff, inset -2vw -0.5vw #e1f4ff; */
   border-top-left-radius: 20vw 5vw;
   border-bottom-left-radius: 20vw 5vw;
@@ -130,7 +133,7 @@ h1 {
   height: 8vw;
   width: 50vw;
   left: 7vw;
-  top: 1vw;
+  top: 10%;
   /* box-shadow: inset -0.5vw 0.5vw #e1f4ff, inset 0.5 -0.5vw #e1f4ff; */
   border-top-right-radius: 20vw 5vw;
   border-bottom-right-radius: 20vw 5vw;
@@ -211,11 +214,12 @@ h1 {
   /* bottom: 17%;
     left: 20%; */
   height: max-content;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
   width: 55vw;
   display: flex;
   flex-direction: column;
+  border-bottom: 0.6rem dotted #aadcec;
   position: relative;
 }
 
@@ -230,14 +234,23 @@ h1 {
 h3 {
   font-family: "Bitter", serif;
   text-shadow: 1px 1px 0 #aadcec;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+}
+
+.h3-tag {
+  font-style: italic;
+  font-size: 1.1rem;
 }
 
 h4 {
   font-family: "Bitter", serif;
   text-shadow: 1px 1px 0 #aadcec;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 0.25vw;
 }
+
+
 
 .front,
 .back {
@@ -325,9 +338,11 @@ h4 {
 .navbar li a {
   text-decoration: none;
   background-color: transparent;
+  font-size: 1.1rem;
 }
 .navbar li a b {
   background-color: transparent;
+  font-size: 1.2rem;
 }
 
 .navbar li:hover {
@@ -336,19 +351,24 @@ h4 {
 }
 
 .footer {
-  display: flex;
-  justify-content: right;
+  // display: flex;
+  // justify-content: right;
+  text-align: end;
+  position: sticky;
+  z-index: -100;
+  right: 1vw;
+  bottom: 1vw;
   font-family: "Bitter", serif;
   font-weight: 400;
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 0.9rem;
 }
 
 .footer span {
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1rem;
 }
 .contact {
   display: flex;
@@ -365,7 +385,7 @@ h4 {
 .buttons {
   display: flex;
   justify-content: center;
-  margin: 4vw 0 2vw 0;
+  margin: 6vw 0 2vw 0;
 }
 
 .button {
@@ -602,16 +622,23 @@ p::selection {
   // }
 }
 
-@media screen and (min-width: 768px) {
-  $deck-value: 9vw;
-  $deck-lead-margin: 22vw;
+@media screen and (max-width: 1199px) {
+  $deck-value: 12vw;
+  $deck-lead-margin: 12vw;
 
+  .reading {
+    height: 30vw;
+  }
   .open {
-    height: 220vw;
+    height: 225vw;
   }
 
   .card {
     @include deck-mid;
+  }
+
+  .resting:hover {
+    bottom: 0.5vw;
   }
 
   .deck-pos-1 {
@@ -703,70 +730,89 @@ p::selection {
     bottom: $deck-bottom;
   }
 
+ 
+  .select-card {
+    bottom: 0.5vw;
+  }
   .target-0 {
     @include target-mid;
     left: $left-card-margin-mid;
     // bottom: calc($card-lift-mid * 5 );
-    bottom: 180vw;
+    bottom: 185vw;
   }
 
   .reading-1 {
     position: absolute;
-    bottom: 153vw;
-    margin-left: 10vw;
+    top: 5vw;
+    margin-left: 15vw;
+    border-top: 0.6rem dotted #aadcec;
   }
+
 
   .target-1 {
     @include target-mid;
     left: $right-card-margin-mid;
     // bottom: calc($card-lift-mid * 4 );
-    bottom: 140vw;
+    bottom: 145vw;
   }
 
   .reading-2 {
     position: absolute;
-    bottom: 112vw;
-    margin-right: 10vw;
+    top: 45vw;
+    margin-right: 15vw;
+    border-top: 0.6rem dotted #aadcec;
   }
 
   .target-2 {
     @include target-mid;
     left: $left-card-margin-mid;
     // bottom: calc($card-lift-mid * 3 );
-    bottom: 100vw;
+    bottom: 105vw;
   }
   .reading-3 {
     position: absolute;
-    bottom: 68vw;
-    margin-left: 10vw;
+    top: 85vw;
+    margin-left: 15vw;
+    border-top: 0.6rem dotted #aadcec;
   }
   .target-3 {
     @include target-mid;
     left: $right-card-margin-mid;
     // bottom: calc($card-lift-mid * 2 );
-    bottom: 60vw;
+    bottom: 65vw;
   }
   .reading-4 {
     position: absolute;
-    bottom: 35vw;
-    margin-right: 10vw;
+    top: 125vw;
+    margin-right: 15vw;
+    border-top: 0.6rem dotted #aadcec;
   }
   .target-4 {
     @include target-mid;
     left: $left-card-margin-mid;
     // bottom: $card-lift-mid;
-    bottom: 20vw
+    bottom: 25vw
   }
   .reading-5 {
     position: absolute;
-    bottom: -2vw;
-    margin-left: 10vw;
+    top: 165vw;
+    margin-left: 15vw;
+    border-top: 0.6rem dotted #aadcec;
   }
-
+  .read-right, .read-left {
+    top: 30%;
+  }
 }
 
-// Need 800 - 1100
-// 1100 - 1400
-@media screen and (max-width: 200px ) {
-  
+@media screen and (min-width: 1200px) {
+  * {
+    font-size: 1vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .header-text {
+    font-size: 1.1rem;
+  }
+
 }
