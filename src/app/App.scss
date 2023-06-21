@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,800;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@mixin target-large {
+  width: 12.5vw;
+  height: 22vw;
+}
+
+@mixin target-mid {
+  width: 20vw;
+  height: 35.2vw;
+}
+
+@mixin target-small {
+  width: 40vw;
+  height: 70.4vw;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: solid black 1px; */
+  /* box-shadow: inset -1px -1px 0 black, inset 1px 1px 0 black; */
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #0f1b61;
+  background-color: transparent;
+}
+
+body {
+  background-color: #e1f4ff;
+  margin: 1vw;
+}
+
+h1 {
+  font-family: "Bitter", serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header::after {
+  background-image: linear-gradient(-135deg, #aadcec, transparent 70%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  z-index: 999;
+}
+
+.header-text h1 {
+  align-self: first baseline;
+  padding-left: 3vw;
+  text-shadow: 0.15rem 0.15rem 0 rgba(170, 220, 236, 1);
+}
+
+.header-text p {
+  align-self: first baseline;
+  padding-left: 5vw;
+  padding-right: 10vw;
+  font-family: "Bitter", serif;
+  font-size: 18px;
+}
+
+.header p i {
+  font-size: 18px;
+}
+
+.reading {
+  margin-top: 2vw;
+  height: 12vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 1s linear;
+}
+
+.open {
+  height: 82vw;
+  margin-bottom: 5vw;
+}
+
+.reading-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3vw;
+  padding-bottom: 0rem;
+  /* padding-right: 12.6rem; */
+  min-height: max-content;
+  height: 100%;
+  width: 100%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.read-left {
+  background-color: #aadcec;
+  position: absolute;
+  height: 8vw;
+  width: 50vw;
+  right: 7vw;
+  top: 1vw;
+  /* box-shadow: inset 0.5vw 0.5vw #e1f4ff, inset -2vw -0.5vw #e1f4ff; */
+  border-top-left-radius: 20vw 5vw;
+  border-bottom-left-radius: 20vw 5vw;
+  border-top-right-radius: 2vw 3vw;
+  border-bottom-right-radius: 1.5vw 2vw;
+  z-index: -1;
+}
+
+.read-right {
+  background-color: #aadcec;
+  position: absolute;
+  height: 8vw;
+  width: 50vw;
+  left: 7vw;
+  top: 1vw;
+  /* box-shadow: inset -0.5vw 0.5vw #e1f4ff, inset 0.5 -0.5vw #e1f4ff; */
+  border-top-right-radius: 20vw 5vw;
+  border-bottom-right-radius: 20vw 5vw;
+  border-top-left-radius: 2vw 3vw;
+  border-bottom-left-radius: 1.5vw 2vw;
+  z-index: -1;
+}
+.read-back {
+  position: absolute;
+  background-color: #aadcec;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* box-shadow: inset 0 -0.5vw #e1f4ff, -0.5vw -0.25vw #aadcec; */
+  border-radius: 20px;
+  border: 8px solid #e1f4ff;
+}
+
+.reading-1 {
+  height: max-content;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.6rem dotted #aadcec;
+  position: relative;
+}
+
+.reading-2 {
+  /* position: absolute;
+    margin-top: 14.5rem; */
+  /* bottom: 63%;
+    left: calc(74.1% - 10rem); */
+  height: max-content;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.6rem dotted #aadcec;
+  position: relative;
+}
+
+.reading-3 {
+  /* position: absolute;
+    margin-top: 25rem; */
+  /* bottom: 48%;
+    left: 20%; */
+  height: max-content;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.6rem dotted #aadcec;
+  position: relative;
+}
+
+.reading-4 {
+  /* position: absolute;
+    margin-top: 35.5rem; */
+  /* bottom: 32%;
+    left: calc(74.1% - 10rem); */
+  height: max-content;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.6rem dotted #aadcec;
+  position: relative;
+}
+
+.reading-5 {
+  /* position: absolute;
+    margin-top: 46rem; */
+  /* bottom: 17%;
+    left: 20%; */
+  height: max-content;
+  margin-bottom: 0rem;
+  padding-bottom: 1rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.reading-1 p,
+.reading-2 p,
+.reading-3 p,
+.reading-4 p,
+.reading-5 p {
+  height: min-content;
+}
+
+h3 {
+  font-family: "Bitter", serif;
+  text-shadow: 1px 1px 0 #aadcec;
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-family: "Bitter", serif;
+  text-shadow: 1px 1px 0 #aadcec;
+  font-size: 1.5rem;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  /* background: firebrick; */
+  backface-visibility: hidden;
+  /* transition: opacity 100ms linear 5s;
+    transition: transform 10s ease; */
+}
+
+.back {
+  background-image: url("https://i.imgur.com/3ovVgAo.png");
+  background-size: contain;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.front {
+  background: blueviolet;
+  transform: rotateY(180deg);
+}
+
+@mixin deck-large {
+  width: 6.67vw;
+  height: 11.73vw;
+}
+
+@mixin deck-mid {
+  width: 12vw;
+  height: 21.12vw;
+}
+
+@mixin deck-small {
+  width: 12vw;
+  height: 21.12vw;
+}
+
+.card {
+  @include deck-large;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: absolute;
+  transition: all 1s ease;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0 1rem;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.navbar li {
+  width: 5.5rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 6px;
+  font-family: "Bitter", serif;
+  font-weight: 600;
+  background-color: transparent;
+  box-shadow: -0.3rem -0.3rem #7f00e0, inset 0 0.3rem rgba(244, 249, 252, 0.75);
+  transition: all 300ms ease-in-out;
+}
+
+.navbar li a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.navbar li a b {
+  background-color: transparent;
+}
+
+.navbar li:hover {
+  transform: scale(1.2);
+  box-shadow: -0.3rem -0.3rem #7f00e0, inset 0 1rem rgba(244, 249, 252, 0.75);
+}
+
+.footer {
+  display: flex;
+  justify-content: right;
+  font-family: "Bitter", serif;
+  font-weight: 400;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.footer span {
+  font-weight: 600;
+  font-size: 13px;
+}
+.contact {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+.contact ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  list-style-type: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 4vw 0 2vw 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-family: "Bitter", serif;
+  font-weight: 600;
+  text-align: center;
+  height: 2.5rem;
+  width: 6rem;
+}
+
+.button-label {
+  color: #0f1b61;
+  border: 3px solid rgba(127, 0, 224, 0.75);
+  border-radius: 8px;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  /* padding: 5px 20px; */
+}
+
+.button-fill {
+  position: absolute;
+  color: #aadcec;
+  /* display: inline-block; */
+  z-index: 1;
+  border-radius: 8px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.enabled:hover > .btn.button-fill {
+  background-color: #aadcec;
+  box-shadow: inset 6px 6px #e1f4ff, 6px 6px #aadcec;
+}
+
+.deck {
+  /* list-style-type: none; */
+  /* padding: 1em; */
+  margin: 20vw 0 0 0;
+  padding-top: 10vw;
+  width: 0;
+  height: 0;
+  /* position: static; */
+  clear: both;
+  /* align-self: center; */
+}
+
+.resting {
+  transition: bottom 300ms linear;
+}
+
+.resting:hover {
+  bottom: -0.5vw;
+}
+
+$deck-bottom: -2vw;
+
+$deck-lead-margin: 25vw;
+$deck-lead-margin-mid: 26vw;
+$deck-lead-margin-small: 10vw;
+$deck-value: 6.67vw;
+$deck-value-mid: 9vw;
+$deck-value-small: 12vw;
+
+.deck-pos-1 {
+  left: $deck-lead-margin;
+  bottom: $deck-bottom;
+}
+.deck-pos-2 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 1);
+  bottom: $deck-bottom;
+}
+.deck-pos-3 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 2);
+  bottom: $deck-bottom;
+}
+.deck-pos-4 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 3);
+  bottom: $deck-bottom;
+}
+.deck-pos-5 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 4);
+  bottom: $deck-bottom;
+}
+.deck-pos-6 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 5);
+  bottom: $deck-bottom;
+}
+.deck-pos-7 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 6);
+  bottom: $deck-bottom;
+}
+.deck-pos-8 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 7);
+  bottom: $deck-bottom;
+}
+.deck-pos-9 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 8);
+  bottom: $deck-bottom;
+}
+.deck-pos-10 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 9);
+  bottom: $deck-bottom;
+}
+.deck-pos-11 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 10);
+  bottom: $deck-bottom;
+}
+.deck-pos-12 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 11);
+  bottom: $deck-bottom;
+}
+.deck-pos-13 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 12);
+  bottom: $deck-bottom;
+}
+.deck-pos-14 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 13);
+  bottom: $deck-bottom;
+}
+.deck-pos-15 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 14);
+  bottom: $deck-bottom;
+}
+.deck-pos-16 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 15);
+  bottom: $deck-bottom;
+}
+.deck-pos-17 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 16);
+  bottom: $deck-bottom;
+}
+.deck-pos-18 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 17);
+  bottom: $deck-bottom;
+}
+.deck-pos-19 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 18);
+  bottom: $deck-bottom;
+}
+.deck-pos-20 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 19);
+  bottom: $deck-bottom;
+}
+.deck-pos-21 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 20);
+  bottom: $deck-bottom;
+}
+.deck-pos-22 {
+  left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 21);
+  bottom: $deck-bottom;
+}
+
+$left-card-margin-large: 5vw;
+$left-card-margin-mid: 4vw;
+$right-card-margin-large: 80.5vw;
+$right-card-margin-mid: 74vw;
+$card-lift-large: 12vw;
+$card-lift-mid: 32.5vw;
+
+.target-0 {
+  left: $left-card-margin-large;
+  bottom: calc($card-lift-large * 5);
+  @include target-large;
+}
+.target-1 {
+  left: $right-card-margin-large;
+  bottom: calc($card-lift-large * 4);
+  @include target-large;
+}
+.target-2 {
+  left: $left-card-margin-large;
+  bottom: calc($card-lift-large * 3);
+  @include target-large;
+}
+.target-3 {
+  left: $right-card-margin-large;
+  bottom: calc($card-lift-large * 2);
+  @include target-large;
+}
+.target-4 {
+  left: $left-card-margin-large;
+  bottom: $card-lift-large;
+  @include target-large;
+}
+
+
+
+
+.select-card {
+  bottom: -1vw;
+  box-shadow: 0 0 10px 1px #e1f4ff;
+}
+
+p::selection {
+  color: #e1f4ff;
+  background-color: rgba(127, 0, 224, 0.75);
+}
+
+@media screen and (min-width: 1400px) {
+  // .deck-pos-1,
+  // .deck-pos-2,
+  // .deck-pos-3,
+  // .deck-pos-4,
+  // .deck-pos-5,
+  // .deck-pos-6,
+  // .deck-pos-7,
+  // .deck-pos-8,
+  // .deck-pos-9,
+  // .deck-pos-10,
+  // .deck-pos-11,
+  // .deck-pos-12,
+  // .deck-pos-13,
+  // .deck-pos-14,
+  // .deck-pos-15,
+  // .deck-pos-16,
+  // .deck-pos-17,
+  // .deck-pos-18,
+  // .deck-pos-19,
+  // .deck-pos-20,
+  // .deck-pos-21,
+  // .deck-pos-22 {
+    
+  // }
+}
+
+@media screen and (min-width: 768px) {
+  $deck-value: 9vw;
+  $deck-lead-margin: 22vw;
+
+  .open {
+    height: 220vw;
+  }
+
+  .card {
+    @include deck-mid;
+  }
+
+  .deck-pos-1 {
+    left: $deck-lead-margin;
+    bottom: $deck-bottom;
+  }
+  .deck-pos-2 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 1);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-3 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 2);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-4 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 3);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-5 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 4);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-6 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 5);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-7 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 6);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-8 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 7);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-9 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 8);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-10 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 9);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-11 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 10);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-12 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 11);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-13 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 12);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-14 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 13);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-15 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 14);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-16 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 15);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-17 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 16);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-18 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 17);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-19 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 18);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-20 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 19);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-21 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 20);
+    bottom: $deck-bottom;
+  }
+  .deck-pos-22 {
+    left: calc($deck-lead-margin + ((100vw - $deck-lead-margin - $deck-value - $deck-lead-margin) / 21) * 21);
+    bottom: $deck-bottom;
+  }
+
+  .target-0 {
+    @include target-mid;
+    left: $left-card-margin-mid;
+    // bottom: calc($card-lift-mid * 5 );
+    bottom: 180vw;
+  }
+
+  .reading-1 {
+    position: absolute;
+    bottom: 153vw;
+    margin-left: 10vw;
+  }
+
+  .target-1 {
+    @include target-mid;
+    left: $right-card-margin-mid;
+    // bottom: calc($card-lift-mid * 4 );
+    bottom: 140vw;
+  }
+
+  .reading-2 {
+    position: absolute;
+    bottom: 112vw;
+    margin-right: 10vw;
+  }
+
+  .target-2 {
+    @include target-mid;
+    left: $left-card-margin-mid;
+    // bottom: calc($card-lift-mid * 3 );
+    bottom: 100vw;
+  }
+  .reading-3 {
+    position: absolute;
+    bottom: 68vw;
+    margin-left: 10vw;
+  }
+  .target-3 {
+    @include target-mid;
+    left: $right-card-margin-mid;
+    // bottom: calc($card-lift-mid * 2 );
+    bottom: 60vw;
+  }
+  .reading-4 {
+    position: absolute;
+    bottom: 35vw;
+    margin-right: 10vw;
+  }
+  .target-4 {
+    @include target-mid;
+    left: $left-card-margin-mid;
+    // bottom: $card-lift-mid;
+    bottom: 20vw
+  }
+  .reading-5 {
+    position: absolute;
+    bottom: -2vw;
+    margin-left: 10vw;
+  }
+
+}
+
+// Need 800 - 1100
+// 1100 - 1400
+@media screen and (max-width: 200px ) {
+  
+}
