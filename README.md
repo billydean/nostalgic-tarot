@@ -1,6 +1,8 @@
 # A Nostalgic Tarot Reading
 
-A master of gift-giving, my brother (LINK) created a custom series of major arcana cards featuring highlights from games we played growing up. They were too good to keep to myself. 
+A master of gift-giving, [my brother](link) created a custom series of major arcana cards featuring highlights from games we played growing up. They were too good to keep to myself. 
+
+![Aejay Goehring's custom artwork used for the card backings of this Tarot deck.](https://i.imgur.com/3ovVgAo.png "Aejay's custom card backing artwork")
 
 ## Deployment
 
@@ -15,7 +17,7 @@ If you'd like to run this bad boy on your own machine, simply run
 yarn run dev
 ```
 
-This runs both front end and back end concurrently, although N.B. that the "back end" is currently a mock up using hard coded data (for Vercel's sake--while it is possible to make Vercel play nice, the data I was working with wasn't deep enough to justify it).
+This runs both front end and back end concurrently, although *N.B.* that the "back end" is currently a mock up using hard coded data (for Vercel's sake--while it is possible to make Vercel play nice, the data I was working with wasn't deep enough to justify it).
 
 The user is greeted by a stacked fan of cards, face-down. After selecting five, pressing 'Start' triggers an API access function (currently wired to a mock-up) pulling image sources, card names, and interpretations for five random tarot cards. The five selected cards are moved from the stacked deck to five target positions on the page alongside their corresponding fetched data; along the way, each card is flipped to reveal its fetched face.
 
@@ -34,23 +36,18 @@ As a result, while I eventually wrestled it to the ground and made things respon
 1. Transitioning away from using hard coded responses for fetching card data (perhaps not deploying with Vercel).
 2. Re-thinking both the card selection and reading review phases of the app with a more mobile-first design approach.
 3. Adjusting or adding further transition rules to prevent elements from "sliding" unevenly when resizing the screen on desktop.
+4. I migrated to Sass near the end of the project in an effort to clean up redundant and inefficient style rules. That was a long road to hoe, and the style sheet is nowhere near clean enough for me to leave it be. Pardon the mess until then.
 
 ## Acknowledgments
 
 * Although very little of it made its way into the project, I was initially inspired by [this resource](https://selfthinker.github.io/CSS-Playing-Cards/) for playing with playing cards from back in 2010.
 * [Aejay Goehring](link) is not only responsible for the cards themselves--as a true blue full stack developer, he was an invaluable sounding board and emotional support as I wrested myself free from a prison of my own design (see above). 
 
-## Built With
-
-* React
-* Sass
-* Express
-
 ## License
 
 This project is licensed under the MIT License.
 
-Copyright (c) [2023] [Billy Dean Goehring]
+Copyright (c) 2023 Billy Dean Goehring
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
