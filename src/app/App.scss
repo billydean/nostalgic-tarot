@@ -356,8 +356,8 @@ h4 {
   text-align: end;
   position: sticky;
   z-index: -100;
-  right: 1vw;
-  bottom: 1vw;
+  right: 5px;
+  bottom: 5px;
   font-family: "Bitter", serif;
   font-weight: 400;
 }
@@ -420,15 +420,17 @@ h4 {
   /* display: inline-block; */
   z-index: 1;
   border-radius: 8px;
-  top: 0px;
-  left: 0px;
+  top: 4px;
+  left: 2px;
   right: 0px;
   bottom: 0px;
 }
 
 .enabled:hover > .btn.button-fill {
   background-color: #aadcec;
-  box-shadow: inset 6px 6px #e1f4ff, 6px 6px #aadcec;
+  top: 2px;
+  left: 1px;
+  box-shadow: inset 3px 3px #e1f4ff, 2px 2px #aadcec;
 }
 
 .deck {
