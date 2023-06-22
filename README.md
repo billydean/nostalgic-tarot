@@ -1,8 +1,14 @@
 # A Nostalgic Tarot Reading
-
-A master of gift-giving, [my brother](link) created a custom series of major arcana cards featuring highlights from games we played growing up. They were too good to keep to myself. 
-
-![Aejay Goehring's custom artwork used for the card backings of this Tarot deck.](https://i.imgur.com/3ovVgAo.png "Aejay's custom card backing artwork")
+<table>
+  <tr>
+    <td width="300" align="center">
+    <img alt="Aejay's custom card backing artwork" src='https://i.imgur.com/3ovVgAo.png' height='150'>
+    </td>
+     <td align="center">
+      A master of gift-giving, [my brother](link) created a custom series of major arcana cards featuring highlights from games we played growing up. They were too good to keep to myself. 
+    </td>
+  </tr>
+</table>
 
 ## Deployment
 
